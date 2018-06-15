@@ -1,0 +1,145 @@
+
+
+
+body {
+	background-color:#fffaf0; 
+	background-image:url('../assets/images/bimage.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+
+.content {
+	min-height:90vh;
+}
+
+
+
+/* Css de L'entete du site */
+
+
+#logotitre 
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 4em;
+	text-shadow:2px 2px 2px pink; /* ombre du texte */
+}
+
+
+
+#logotitre img    /* css du logo du titre de Simplon */
+{
+	width:60px;
+	padding:0px;
+
+}
+@media screen and (max-width: 360px) {
+	
+	#logotitre 
+	{
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.5em;
+		text-shadow:2px 2px 2px pink; /* ombre du texte */
+	}
+	
+}
+
+#soustitre 
+{
+	font-family: 'Roboto', sans-serif;
+	text-shadow:1px 1px 1px antiquewhite;
+
+}
+
+
+
+/* Css des images du site */
+
+figure {                       /* taille des images */
+	width: 300px;
+	height: 250px;
+	border:2px solid pink;
+	
+}
+
+
+#images1 
+{
+	background-image:url('../assets/images/simplon_noir1.jpg');
+}
+
+#images2 
+{
+	background-image:url('../assets/images/equipes1.jpg');
+}
+
+#images3
+{
+	background-image:url('../assets/images/formation1.jpg');
+}
+
+
+.titreimage1, .titreimage2, .titreimage3 {
+	color:antiquewhite;
+	text-shadow:1px 1px 1px black;
+	padding:10px 10px 15px 15px;
+	font-family: 'Roboto', sans-serif;
+	margin-top:30%;
+	margin-left:10%;
+	width:80%;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+h3:hover {
+	color: gold;
+}
+
+
+
+
+
+/* zoom des images */
+
+
+
+.hover figure {
+	
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover {
+
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	color:gold;
+	border:4px solid gold;
+	text-shadow:2px 1px 1px black;
+
+
+}
+
+
+
+/* footer */
+
+footer {
+  
+	width:100%;
+	padding:20px 30px 100px 40px;
+
+	color:white;
+	background-color:#676767;
+}
+
+
+
+
+
