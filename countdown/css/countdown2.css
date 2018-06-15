@@ -1,0 +1,115 @@
+#goalgif {
+
+
+}
+
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+
+
+body{
+	background-image: url('../assets/img/tsubasa.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+background-position: 100% 0;
+	animation: animatedBackground 10s linear;
+}
+
+@font-face {
+ font-family: "Uni";
+ src: url("../assets/fonts/uni0553-webfont.ttf") format('truetype'),
+      url("../assets/fonts/uni0553-webfont.woff") format('woff');
+  }
+  @font-face {
+
+       font-family: "Manga";
+ src: url("../assets/fonts/Manga.ttf") format('truetype');
+      
+       
+}
+audio {
+	margin-top:0px;
+}
+#scoreboard{
+	margin-top:1%;
+}
+.titlecountdown{
+	margin-top:20%;
+}
+#time{
+	
+ color:white;
+	margin-top:1%;
+	
+	
+	background-color:black;
+	padding-bottom:20px;
+	border:1px solid gold;
+	border-radius:10px;
+}
+h4 {
+	font-family: "Manga";
+	margin-top:30px;
+	color:yellow;
+	font-size:2.5em;
+	margin-bottom:20px;
+}
+.temps{
+	width:70%;
+	padding:0px;
+	border-top:1px solid gold;
+	border-bottom:1px solid gold;
+	margin-bottom:20px;
+}
+#minutes {
+	
+	
+	display: inline-block;
+	font-size: 60px;
+
+}
+.separator {
+	font-family: "Uni";
+
+	display: inline-block;
+	font-size:60px;
+		padding-left:2%;
+}
+#secondes {
+	
+padding:0px;
+	display: inline-block;
+		font-size: 60px;
+}
+
+span{
+	
+	padding:30px;
+	cursor: pointer;
+	
+}
+#valeurs{
+	margin-bottom:20px;
+	padding:20px 10px;10px;0px;
+
+}
+input {
+	margin-right:30px;
+}
+
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom img:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+

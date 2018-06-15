@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Final Countdown</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   
+
+		<link rel="stylesheet" href="css/countdown2.css">
+     <link rel="stylesheet" href='css/animate.css'/>  <!-- differentes animations en css -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      
+
+
+
+	</head>
+
+
+
+
+
+	<body>
+
+
+
+
+           <div id="scoreboard" class=" col-lg-6 offset-lg-3" align="center">
+
+
+                    <audio class="animated fadeIn" autoplay controls>
+                    <source src="assets/sons/ost2.mp3" >
+                    </audio>  
+
+
+
+            <div class="titlecountdown animated zoomInDown zoom"><img src="assets/img/captitle.png" width="400"></div>
+
+
+
+            
+           	<div id="time" class="animated slideInUp">
+              
+                <h4 >TIME</h4>
+
+                <div class="temps">
+           	        <div id="minutes">00</div>
+           	        <div class="separator">:</div>
+           	        <div id="secondes">00</div>
+               </div>
+
+                <img id="goalgif" src='assets/img/goal3pause.png' width="150" height="83">
+
+           		<br>
+              <br>
+           		
+           			<span  id="pause" class="zoom" onclick="cdpause();sifflet();"><img class="zoom" src="assets/img/lecture.png" width="40"></span>
+           			<span  id="reset" class="zoom" onclick="cdreset();reload();"><img class="zoom" src="assets/img/stop.png" width="40"></span>
+           			<span id="reini" class="zoom" onclick="cdreini();sifflet();"><img  src="assets/img/reini.png" width="40"></span>
+           		
+           	</div>
+
+           	<div id ="valeurs" >
+
+              <form id="myform" name="nomform" class="animated fadeIn">
+           		    <div class="input-group ">
+                      <input type="number" id="minuser" class="form-control" placeholder=" Minutes" autocomplete="off"  min="0" max="89">
+                      <input type="number" id="nbuser" class="form-control" placeholder=" Secondes" autocomplete="off"  min="0" max="59">
+                  <div class="input-grid"noup-append">
+                      <button class="btn btn-warning" id="valide" name="valide"  type="submit">Validez</button>
+                 </div>
+               </div>
+            </form>
+
+          </div> <!-- fin de valeurs -->
+
+       </div>   <!-- fin de scoreboard -->  
+         
+
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!----------------------------------------------------------------------------------------------->
+              <!-----------------------------------------------SCRIPTS ---------------------------------------->
+              <!------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+
+  /*************************** /
+  /* VARIABLES AUDIO */
+  /***************************/
+
+  var audio1 = document.createElement("audio");
+  audio1.src = "assets/sons/sifflet.mp3";
+  audio1.volume = 1;
+  audio1.autoPlay = false;
+  audio1.preLoad = true;
+  audio1.controls = true;
+
+    var audio2 = document.createElement("audio");
+  audio2.src = "assets/sons/sifflet2.mp3";
+  audio2.volume = 1;
+  audio2.autoPlay = false;
+  audio2.preLoad = true;
+  audio2.controls = true;
+
+      var audio3 = document.createElement("audio");
+  audio3.src = "assets/sons/goal.mp3";
+  audio3.volume = 1;  audio3.autoPlay = false;
+  audio3.preLoad = true;
+  audio3.controls = true;
+
+
+/*****************************/
+ /*LES VARIABLES */
+ /*****************************/
+
+   var pause =false;       // la variable pause 
+   var formvisible = true;
+   var reset = false;
+  
+/***********************/
+ /* FONCTIONS SIFFLETS */
+ /*************************/
+
+
+
+function sifflet(){
+  audio1.play();
+};
+
+function sifflet2(){
+  audio2.play();
+};
+
+function goal(){
+  audio3.play();
+};
+
+ /**************************/
+ /* ENVOIE DES DONNEES*/
+ /*****************************/
+
+
+
+     $('#myform').on('submit', function () {
+
+        s = $('#nbuser').val() ;
+
+        m = $('#minuser').val() ;
+
+
+        
+        counter();   // fonction du compte a rebours
+
+  $('#valeurs').css('visibility', 'hidden');  // cache le formulaire
+  formvisible = false;
+  
+  return false;
+
+});
+
+
+
+
+
+/***************************************/
+/* COMPTE A REBOURS */
+/**************************************/
+
+
+
+
+
+/* AFFICHE LES DONNEES */
+
+      function cddisplay() {    
+       if (m < 10 && m.length != 2) m = '0' + m;   // si les minutes sont en dessous de 10 , en rajoute 0 a la valeur minute
+     if (s < 10 && s.length != 2) s = '0' + s;                          
+     
+        $('#secondes').html(s);            // ajoute la variable s a la div
+        $('#minutes').html(m);             // ajoute la variable m a la div
+    };
+
+
+
+
+
+/*COMPTEUR*/
+
+
+   function counter(){
+     
+
+     if (m < 10 && m.length != 2) m = '0' + m;   // si les minutes sont en dessous de 10 , en rajoute 0 a la valeur minute
+     if (s < 10 && s.length != 2) s = '0' + s;
+
+     cddisplay();                       // appel de la fonction au debut du compteur
+   
+
+      if ((s == 0) && (m == 0) && (!reset)) {           // si les minutes et les secondes sont à 0 
+
+           
+           goal();
+           $('#goalgif').attr('src', 'assets/img/goal.gif');     
+
+}
+        else { 
+
+
+     
+
+      
+         --s;                                       // decremente les secondes                      
+         m = (s < 0) ? --m : m;                     // si les secondes tombes en dessous de 0 j'enleve 1 minutes
+         if (m < 0) clearInterval(interval);        // si les minutes tombe en dessous de 0 je stoppe
+         s = (s < 0) ? 59 : s;                       // si les secondes sont strictement inferieur a 0 , je remeets les secondes a 59
+         if (m < 10 && m.length != 2) m = '0' + m;    
+         if (s < 10 && s.length != 2) s = '0' + s;
+   
+          t = setTimeout("counter()", 1000);          // compteur qui se rafraichit toutes les secondes
+
+        $('#goalgif').attr('src', 'assets/img/goal3.gif'); 
+        }
+       
+    };
+
+/* FONCTION LECTURE PAUSE */
+
+    
+    function cdpause() {
+        if (!pause)                // si le compteur n'est pas en pause , je mets la variable en true pour activer la pause
+                {
+
+         pause = true;
+        clearTimeout(t);
+        $('#goalgif').attr('src', 'assets/img/goal3pause.png');    
+      }
+
+      else
+         {
+        pause = false;              // si le compteur est en pause , je relance le chrono
+        counter(t);
+         $('#goalgif').attr('src', 'assets/img/goal3.gif'); 
+      }
+ 
+    };
+    
+
+
+    /* FONCTION RESET */
+
+
+
+    function cdreset() {
+reset = true
+      if(pause){
+         
+         s = 0;                          //je remets tout a zero
+         m = 0;
+          if (m < 10 && m.length != 2) m = '0' + m;
+         if (s < 10 && s.length != 2) s = '0' + s;
+         cddisplay();
+         $('#valeurs').css('visibility', 'visible');  
+         formvisible=true;
+
+
+       }else{
+
+        s = 0;
+        m = 0;
+       
+
+         if (m < 10 && m.length != 2) m = '0' + m;
+         if (s < 10 && s.length != 2) s = '0' + s;
+         $('#valeurs').css('visibility', 'visible');     // je remontre le formulaire 
+         formvisible=true; 
+         
+}
+
+    };
+
+    /* FONCTION REINITIALISATION */
+
+
+      function cdreini() {
+       if (!formvisible){
+         s = $('#nbuser').val() ;               
+
+         m = $('#minuser').val() ;
+
+         clearTimeout(t);
+
+         counter();
+}else{
+
+}
+           
+      };
+
+function reload() {
+    location.reload();
+};
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
