@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8"> <!-- Encodage en utf-8 pour les problemes d'accents -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Le Corps Humain</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    <!-- declarer Bootstrap avec CDN -->
+
+	<link rel="stylesheet" href='css/corps.css'/> <!-- css du corps humain -->
+	<link rel="stylesheet" href='css/animate.css'/>  <!-- differentes animations en css -->
+
+
+    <script src="js/jquery.js"></script>  <!--Jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script><!--Js de bootstrap -->
+	<script src="js/corps.js"></script> <!-- js du corps-->
+
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- video en background -->
+<div>
+        <video autoplay muted loop  id="bgvid">     <!--autoplay se joue directement et loop = en boucle -->
+             <source src="assets/videos/bgvideo.mp4" type="video/mp4">
+      </video>
+</div>
+
+
+
+   <div class="container-fluid">
+      <section class="content">
+      <div class="row">
+           
+           <!-- Entete -->
+
+           <div id="titredusite" class="col-lg-12">
+
+                <h1 class="animated slideInDown"> LE CORPS HUMAIN </h1>
+                 
+                 <!-- Lecteur audio -->
+                <audio class="animated fadeIn" autoplay controls>
+                    <source src="assets/sons/drhouse.mp3" >
+                </audio>  
+
+           </div>
+
+
+       </div> <!-- fin du row -->
+
+<br>
+<br>
+<br>
+
+       <!-- image du corps -->
+
+
+       <div class="row">
+
+            <div id="ImageDuCorps" class="col-lg-4 offset-lg-2 .mx-auto ">
+
+                <!--image du corps humain-->
+
+                <img id="imgcorps" class=".img-fluid animated fadeIn" src="assets/images/corps1.png"> 
+
+                          <!-- gif du cercle sur le bras -->
+
+                          <div class="circlebras img-fluid animated fadeIn">        
+                                <img src="assets/images/circle.gif" width="150px">
+                          </div>
+
+                          <!-- gif du cercle sur la tete -->
+                          <div class="circletete img-fluid animated fadeIn">         
+                                <img src="assets/images/circle.gif" width="150px">
+                          </div>
+                           
+                           <!-- gif du cercle sur la jambe -->
+                          <div class="circlejambe img-fluid animated fadeIn">         
+                                <img src="assets/images/circle.gif" width="150px">
+                          </div>
+                            
+                            <!-- gif du cercle sur les abdos -->
+                          <div class="circleabdos img-fluid animated fadeIn">         
+                                <img src="assets/images/circle.gif" width="150px">
+                          </div>
+                 </div>
+
+           
+           <!-- La colonne texte -->
+
+            <div id="Textexp" class="col-lg-3 animated fadeIn">   
+
+            <!-- Titre de la colonne texte -->              
+
+                <div class="titrepartie  animated fadeIn"><h4> Bienvenue </h4> </div>    
+
+                <!-- Paragraphe de la colonne texte --> 
+
+                <div class="textpartie animated fadeIn"><p>Le corps humain désigne l'ensemble de ce qui structure, anatomiquement et anthropologiquement, l'organisme d'un homme ou d'une femme. Des pieds à la tête, il est nécessairement composé sous l'épiderme d'une structure osseuse, d'un appareil musculaire, de vaisseaux sanguins, d'un système nerveux, respiratoire, digestif, urinaire, reproducteur, endocrinien, etc. </p>
+           </div> 
+
+            </div> <!-- fin de col texte -->
+
+
+       </div> <!--fin du row du corps du site -->
+
+</section>
+   </div> <!-- fin du container -->
+
+
+
+</body>
+
+
+
+
+</html>

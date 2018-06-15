@@ -1,0 +1,108 @@
+html {
+	width:100%;
+	height:100vh;
+	margin:0px;
+	padding:0px;
+	
+}
+/* La video en back*/
+
+video#bgvid {
+  position:absolute; left: 0; top:0;
+ background-size: cover;
+  width:100%;
+z-index: -100;
+
+}
+
+/* body */
+
+
+body{
+
+	background-color:cornflowerblue;
+    background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	margin:0px;
+	padding:0px;
+
+	
+}
+.content {
+	min-height: 100vh;
+	margin:0px;
+	padding:0px;
+}
+
+/* Le titre */
+
+#titredusite{
+	background-color:rgba(08,23,22,0.8);
+	text-align:center;
+	padding:20px;
+}
+
+
+/* cercle sur le corps */
+
+.circlebras {
+	position:absolute; left:30%; top:19%;
+	z-index:100;
+	padding:0px;
+	cursor:pointer;
+}
+
+.circletete {
+	position:absolute; left:19%; top:6%;
+	z-index:100;
+	cursor:pointer;
+}
+
+.circlejambe {
+	position:absolute; left:28%; top:74%;
+	cursor:pointer;
+}
+
+.circleabdos {
+	position:absolute; left:15%; top:39%;
+	cursor:pointer;
+}
+
+	
+}
+
+#imgcorps{
+	  position:relative;
+		z-index: -80;
+
+
+}
+#ImageDuCorps {
+	position:relative;
+}
+
+/* colonne texte */
+
+#Textexp 
+{
+	border:2px solid white;
+	color:initial;
+	background-color:rgba(208,233,232,0.8);
+	text-shadow:1px 0px 1px white;
+	padding:30px;
+	text-align:justify;
+}
+
+
+h4
+{
+	color:sandybrown;
+}
+
+p {
+	font-family: 'Arvo', serif;
+}
+
+
+
