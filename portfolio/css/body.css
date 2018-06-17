@@ -244,15 +244,17 @@ html, body{
 .langues li {
     float: left;
     list-style-type: none;
+    margin-left:100px;
     
 }
 
 .langues li+li{
     margin-left: 100px;
+    
 }
-.langues li{
-    margin-left: 100px;
-}
+
+
+
 
 
 
@@ -267,6 +269,7 @@ html, body{
     color: #fff;
     font-size: 36px;
     font-weight: 700;
+    text-align:center;
     
 }
 
