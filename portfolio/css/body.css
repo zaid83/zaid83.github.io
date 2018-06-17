@@ -1,0 +1,574 @@
+
+
+
+
+html, body{
+
+	font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #2d3038;
+    overflow-x: hidden;
+    font-weight:550;
+}
+
+
+/**************/
+/* HEADER CSS */
+/**************/
+
+
+
+
+
+.header{
+ background-image:url('../assets/img/computer.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.header,.banner-content {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+    
+    color:white;
+    
+}
+
+.banner-content  {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.banner-content h1{
+    font-size: 52px;
+    margin-bottom: 0;
+    font-family: 'Sacramento', cursive;
+}
+
+.banner-content h2 {
+    font-size: 128px;
+    margin-top: 0;
+    line-height: 92px;
+}
+
+.banner-content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 26px;
+    margin-top:20px;
+}
+.img-banner-langages {
+    margin-top:30px;
+    width:300px;
+    padding:0px;
+}
+
+#cv {
+    margin-top:100px;
+}
+
+
+/**************/
+/* NAV CSS */
+/*************/
+
+.navbar {
+    background-color:rgba(0,0,0,0) !important;
+
+}
+.blacknav {
+    background-color:black !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+    letter-spacing: 0.2em;
+    color:orange !important;
+    font-family: initial;
+    font-size:20px;
+    text-shadow: 1px, 1px, 1px black;
+    
+}
+
+.navbar-nav .btnacceuil {
+  margin-right:20px;
+  padding:25px;
+  color:white !important;
+  font-size:13px;
+}
+
+.navbar-nav .btnacceuil:hover {
+
+    color:cyan !important;
+    font-size:13px;
+}
+.navbar-nav .btninfos {
+    margin-right:20px;
+    padding:25px;
+    color:white !important;
+    font-size:13px;
+}
+.navbar-nav .btninfos:hover {
+    color:#F05F40 !important;
+    font-size:13px;
+}
+
+.navbar-nav .btncompetence {
+    margin-right:20px;
+    padding:25px;
+    color:white !important;
+    font-size:13px;
+}
+
+.navbar-nav .btncompetence:hover {
+   
+    color:lightgreen !important;
+    font-size:13px;
+}
+
+
+.navbar-nav .btnformation {
+    margin-right:20px;
+    padding:25px;
+    color:white !important;
+    font-size:13px;
+    
+}
+
+.navbar-nav .btnformation:hover {
+
+    color:yellow !important;
+    font-size:13px;
+    
+}
+.navbar-nav .btnportfolio {
+    margin-right:20px;
+    padding:25px;
+    color:white !important;
+    font-size:13px;
+    
+}
+.navbar-nav .btnportfolio:hover {
+
+    color:violet !important;
+    font-size:13px;
+    
+}
+
+.navbar-nav .btncontact {
+    margin-right:20px;
+    padding:25px;
+    color:white !important;
+    font-size:13px;
+}
+
+.navbar-nav .btncontact:hover {
+
+    color:blue !important;
+    font-size:13px;
+}
+
+#navigation {
+    margin-left:20%;
+}
+
+/***********/
+/*QUOTE*/
+/**********/
+
+
+#quote{
+    padding:10%;
+    background-color:#F05F40;
+    color:white;
+}
+
+
+
+/************/
+/*INFOS PERSO*/
+/*************/
+.section-infos {
+ padding-top:70px;
+ padding-bottom: 70px;
+ 
+}
+
+.about-info {
+    color:#3c70b4;
+    font-style: italic;
+}
+.infosPerso {
+    font-family: 'Sacramento', cursive;
+    font-size:40px;
+    font-style:normal;
+    color:#f7941d;
+    margin-bottom:20px;
+    
+    
+}
+
+
+.label-infos{
+    color:#f26522;
+    font-family:initial;
+    font-size:18px;
+}
+
+/**************/
+/* LANGUES */
+/**************/
+
+.langues h4 {
+    font-size:3em;
+    padding:20px;
+    font-family: 'Sacramento', cursive;
+}
+.langues p {
+ color:black;
+ 
+}
+
+
+
+
+.langues li {
+    float: left;
+    list-style-type: none;
+    
+}
+
+.langues li+li{
+    margin-left: 100px;
+}
+.langues li{
+    margin-left: 100px;
+}
+
+
+
+.langues .percent {
+    display: inline-block;
+    text-align: center;
+    width: 116px;
+    height: 116px;
+    line-height: 116px;
+    background-color: #f7941d;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+
+.langues .percent1 {
+    background-color: #f26522;
+}
+
+.langues .percent2 {
+    background-color: #3c70b4;
+}
+
+.langues .percent3 {
+    background-color: #87c05e;
+}
+
+.langues .percent:after {
+    content: '%';
+}
+
+.langues .chart h5 {
+    padding:20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.text-info {
+    font-size: 14px;
+    line-height: 24px;
+    color: #2d3038;
+    margin-bottom: 50px;
+}
+.langues {
+    margin-top: 80px;
+    
+}
+
+
+/**************/
+/* COMPETENCES */
+/**************/
+#competences {
+    padding-bottom:100px;
+    background-color: beige;
+}
+
+.comp-title{
+    padding:5%;
+    background-color:#F04F40;
+
+    color:white;
+}
+#competences h4 {
+    padding:40px;
+    font-family:initial;
+}
+.lgprogram li{
+    float: left;
+    list-style-type: none;
+    margin-left:22px;
+    
+}
+.listpro {
+    padding-left:27%;
+}
+
+.preprog {
+    margin-top:100px;
+    
+}
+.ct{
+   margin-top:150px;
+   
+   
+}
+.ct p{
+    font-family:initial;
+    font-size:18px;
+}
+.pull-right{
+    float:right;
+}
+
+.imgprog {
+    cursor:pointer;
+}
+
+.imgprog img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    color:gold;
+    border:2px solid gold;
+    
+}
+.programtitle{
+    color:orangered;
+}
+
+/**************/
+/* EXP/FORMATIONS */
+/**************/
+
+.exptitle{
+  
+    padding:5%;
+    background-color:#d24;
+    color:white;
+}
+#experiences h4 {
+    padding:20px;
+    color:#3c70b4;
+    margin-top:60px;
+    margin-bottom:60px;
+    border:1px solid gold
+    
+}
+.experienceimg {
+    width:150px;
+    float:left;
+    margin-right:60px;
+
+}
+.experiencect {
+    text-align: justify;
+    margin:10px;
+    padding:0px;
+    overflow: auto;
+}
+.experiencect h3 {
+    color:orange;
+    font-size:1.2em;
+}
+
+.experiencect h5 {
+    color:coral;
+    font-size:1em;
+}
+.experiencect p {
+   font-size:1em;
+   font-family:initial;
+}
+.experiences{
+    
+    padding-top:30px;
+    padding-bottom:30px;
+    border-bottom:1px dotted gold;
+
+}
+.formatimg {
+    width:150px;
+    float:left;
+    margin-right:60px;
+
+}
+.formatct {
+    text-align: justify;
+    margin:10px;
+    padding:0px;
+    overflow: auto;
+}
+.formatct h3 {
+    color:orange;
+    font-size:1.2em;
+}
+
+.formatct h5 {
+    color:coral;
+    font-size:1em;
+}
+.formatct p {
+   font-size:1em;
+   font-family:initial;
+}
+.formations{
+    padding-top:30px;
+    padding-bottom:30px;
+    border-bottom:1px dotted gold;
+    
+}
+.exp {
+    padding-right: 40px;
+    
+
+    background-color: rgba(250,250,20,0.2);
+}
+
+/*************/
+/*PORTFOLIO*/
+/***********/
+#portfolio {
+ 
+}
+
+.portfoliotitle {
+
+    margin-top:100px;
+    padding:5%;
+    background-color:#dd5e22;
+    color:white;
+    margin-bottom:100px;
+
+}
+
+/**********/
+/*HOBBIES*/
+/**********/
+
+.hobbies h4{
+    
+    margin-bottom:100px;
+    margin-top:100px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5em;
+}
+
+.hobbies h5 {
+    padding:20px;
+    color:gray;
+}
+
+/***********/
+/*CONTACT*/
+/**********/
+
+#contact{
+    background-color:black;
+    color:white;
+    padding:8%
+}
+
+.contact-title{
+    text-align:center;
+    margin-top:100px;
+    padding:5%;
+    background-color:black;
+    color:white;
+    margin-bottom:100px;
+
+}
+
+
+
+.contact-section h2,.contact-section h3  {
+    margin:0 0 35px 0;
+    color:orangered;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+.contact-section p{
+    margin:0 0 25px;
+    font-size:12px;
+    line-height:1.6em;
+}
+.contact-section a{
+    color:#26a5d3;
+}
+.contact-section a:hover,a:focus{
+    text-decoration:none;
+    color:red;
+}
+
+
+textarea.form-control{
+    height:100px;
+    margin-bottom:50px;
+}
+.contact-section label{
+    color:orange;
+}
+input:focus {
+    outline: none !important;
+    border:1px solid orange !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+.contact-section li{
+    display: inline;
+}
+
+.contact-section h3  {
+    margin-top:30px;
+}
+/*******************/
+/*Compte a rebours */
+/*******************/
+
+.content-time h5 {
+    margin-top:25px;
+    text-align:center;
+    font-family:initial;
+    
+}
+
+.numbers .bloc{
+    display:inline-block;
+    font-family: inherit;
+    color:white;
+}
