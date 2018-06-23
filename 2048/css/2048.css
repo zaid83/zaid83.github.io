@@ -1,0 +1,63 @@
+@font-face {
+ font-family: "SuperMario";
+ src: url("../fonts/SuperMario256.ttf") format("TrueType");
+}
+
+body {
+    font-family: "SuperMario", sans-serif;
+	  background-image: url('../assets/img/bgmario.png');
+}
+
+.above-game{
+    margin-top:60px;
+}
+#score {
+	font-size:30px;
+	color:orange;
+	text-shadow:2px 1px 2px black;
+}
+
+#size-bloc{
+	margin-bottom: 15px;
+	color:yellow;
+}
+#size-title
+	margin-top: 0px;
+}
+#size{
+	width: 20px;
+	border-radius: 3px;
+}
+#canvas{
+	background-color: black;
+	border-radius: 5px;
+}
+#canvas-bloc{
+	margin-left: -250px;
+	padding-left: 50%;
+
+}
+#adroite{
+position: absolute;
+	top:20%;
+}
+#game-over {
+	display:none;
+	position:absolute;
+	top:60%;
+	right:0%;
+	width:100%;
+	background-color:black;
+	text-align: center;
+	padding:80px;
+	color:orangered;
+}
+#score2 {
+	font-size:30px;
+	color:yellow;
+}
+#imagedroite{
+	position:absolute;
+	top:55%;
+	
+}
