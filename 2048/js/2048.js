@@ -18,7 +18,7 @@ startGame();
 
 changeSize.onclick = function () {
    score = 0;
-  if (sizeInput.value >= 2 && sizeInput.value <= 20) {    // si la valeur de l'input est entre 2 et 20
+  if (sizeInput.value >= 2 && sizeInput.value <= 6) {    // si la valeur de l'input est entre 2 et 6
     size = sizeInput.value;
     width = canvas.width / size - 6;
     herewego();
@@ -124,7 +124,7 @@ document.onkeydown = function (event) {                                  // fonc
 
 }
 
-function startGame() {                                //commencement du eju
+function startGame() {                                //commencement du jeu
   createCells();
   drawAllCells();
   pasteNewCell();
