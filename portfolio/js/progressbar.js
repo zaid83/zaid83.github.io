@@ -30,7 +30,7 @@ function move() {
 		$('#imggauche').attr('src','assets/img/html.png');
 
 		$("#myBar").css("background-color","orangered");
-		$("#myBar").attr("data-percent","80");
+		$("#myBar").attr("data-percent","90");
 		$(".programtitle").html("HTML 5");
 		$(".programtitle").css("color","orangered");
 		$(".programcontent").html("Après quelques mois, j'ai réussi à comprendre le fonctionnement et la semantique du HTML 5.Mes connaissances  dans ce langage de programmation sont solides.");
@@ -56,7 +56,7 @@ function move() {
 
 		$('#imggauche').attr('src','assets/img/js.png');
 		$("#myBar").css("background-color","#E5A228");
-		$("#myBar").attr("data-percent","40");
+		$("#myBar").attr("data-percent","60");
 		$(".programtitle").html("JAVASCRIPT");
 		$(".programtitle").css("color","#E5A228");
 		$(".programcontent").html("Mes connaissances en Javascript sont plutot moyennes mais je m'améliore de jours en jours.");
@@ -69,7 +69,7 @@ function move() {
 
 		$('#imggauche').attr('src','assets/img/jquery.png');
 		$("#myBar").css("background-color","#0868AC");
-		$("#myBar").attr("data-percent","50");
+		$("#myBar").attr("data-percent","70");
 		$(".programtitle").html("JQUERY");
 		$(".programtitle").css("color","#0868AC");
 		$(".programcontent").html("Je suis plus à l'aise avec Jquery que le javascript.");
@@ -82,7 +82,7 @@ function move() {
 
 		$('#imggauche').attr('src','assets/img/phplogo.png');
 		$("#myBar").css("background-color","#777BB3");
-		$("#myBar").attr("data-percent","40");
+		$("#myBar").attr("data-percent","60");
 		$(".programtitle").html("PHP");
 		$(".programtitle").css("color","#777BB3");
 		$(".programcontent").html("Je connais  les bases du PHP mais sans plus.");
@@ -95,7 +95,7 @@ function move() {
 
 		$('#imggauche').attr('src','assets/img/photoshop.png');
 		$("#myBar").css("background-color","darkblue");
-		$("#myBar").attr("data-percent","60");
+		$("#myBar").attr("data-percent","50");
 		$(".programtitle").html("Photoshop");
 		$(".programtitle").css("color","darkblue");
 		$(".programcontent").html("J'utilise Photoshop pour des retouches photos.");
