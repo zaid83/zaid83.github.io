@@ -1,0 +1,87 @@
+
+
+
+body {
+    background-image:url(images/bg.jpg);
+    background-size:cover;
+}
+
+main {
+    margin: 0 auto;
+    
+    
+}
+
+header {
+    text-align: center;
+    color:white;
+}
+
+header img{
+    padding:0px;
+  
+}
+header a {
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    padding:8px;
+    border:1px solid white;
+    border-radius: 10px;
+}
+header a:hover {
+ background-color: orangered;
+    color:white;
+}
+
+/* la grille du jeu */
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    perspective: 1000px;
+   
+}
+
+/* Toutes les cartes du jeu */
+.cartes {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    width:100px;
+    height:100px;
+    margin-right:4px;
+}
+
+/* lorsque je clique sur une carte il ya un effet de dézoom */
+.cartes:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+/* lorsque je clique sur une carte il ya un effet de retournement */
+.cartes.flip {
+    transform: rotateY(180deg);
+}
+
+/*backface-visibility indique si la face arrière d'un élément doit être visible lorsqu'elle est orientée vers l'utilisateur*/
+
+.dos-carte {
+    position: relative;
+    backface-visibility: hidden;
+
+}
+
+.front-carte {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+
+}
