@@ -4,6 +4,13 @@
         // selection du span pour le nb d'essais
         const essai = document.querySelector('span');
 
+    // le modal de la gagne
+     const modal = document.getElementById('myModal');
+     const closex = document.getElementsByClassName("close")[0];
+     closex.onclick = function() {
+  modal.style.display = "none";
+}
+
 
         let nombreEssais = 0;
 
@@ -38,7 +45,6 @@
 
 
 
-
         // fonction pour retourner les cartes
         function retournerCarte() {
 
@@ -58,6 +64,7 @@
             // la variable this correspond a la carte qui a ete cliqué
             // classlist.toggle rajoute une class flip si il y en a pas et l'enleve si elle existe
             this.classList.toggle('flip');
+            flipSound();
 
             // si une premiere carte n'est pas retourné, on clique sur une premiere carte qui se retourne en lui ajoutant la classe flip
             if (carteRetourne == false) {
@@ -138,6 +145,35 @@
 
         function gagnant() {
             if (nombrePairs == 8) {
-                alert('YOU WIN');
+                 modal.style.display = "block";
+                victorySound();
             }
         }
+
+function flipSound () {
+var audio1 = document.createElement("audio");
+  audio1.src = "musique/flip.wav";
+  audio1.volume = 1;
+  audio1.autoPlay = false;
+  audio1.preLoad = true;
+  audio1.controls = true;
+    
+    audio1.play();
+    
+}
+
+function victorySound () {
+var audio2 = document.createElement("audio");
+  audio2.src = "musique/ukulele.mp3";
+  audio2.volume = 1;
+  audio2.autoPlay = false;
+  audio2.preLoad = true;
+  audio2.controls = true;
+    
+    audio2.play();
+    
+}
+
+
+
+
