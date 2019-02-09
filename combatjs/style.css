@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "PressStart";
+    src: url("PressStart2p.ttf");
+}
+
+@font-face {
+    font-family: "FEASFBI";
+    src: url("FEASFBI_.ttf");
+}
+
+
+
+body {
+    margin: 0;
+    background-image: url('img/bgbleach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+
+}
+
+
+#fenetreJeu {
+    position: relative;
+    width: 80%;
+    height: 37em;
+    margin: 1% auto;
+    margin-bottom: 1%;
+    background-image: url(img/forest.png);
+    border: 3px solid white;
+
+}
+
+#tutoj1 {
+    position: absolute;
+    font-size: 1em;
+    left: 1em;
+    top: 0.5em;
+    font-family: "PressStart";
+    color: blue;
+
+}
+
+
+
+#tutoj2 {
+    position: absolute;
+    font-size: 1em;
+    right: 1em;
+    top: 0.5em;
+    font-family: "PressStart";
+    color: orangered;
+}
+
+.rebours {
+    font-size: 14em;
+    position: absolute;
+    top: 0;
+    left: 46%;
+    z-index: 100;
+    color: red;
+    font-family: "FEASFBI";
+
+}
+
+
+#fenetreJeu .perso1 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    z-index: 100;
+}
+
+#fenetreJeu .perso2 {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    z-index: 100;
+}
+
+.continuer {
+    margin-left: 27%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 2em;
+    background-color: blue;
+    font-family: "BLEACH";
+    border-radius: 60%;
+    color: white;
+}
+
+.reset {
+    margin-left: 10%;
+    font-size: 2em;
+    padding: 2%;
+    background-color: red;
+    font-family: "BLEACH";
+    border-radius: 60%;
+    color: white;
+}
