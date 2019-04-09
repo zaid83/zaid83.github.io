@@ -33,7 +33,7 @@ function move() {
 		$("#myBar").attr("data-percent","90");
 		$(".programtitle").html("HTML 5");
 		$(".programtitle").css("color","orangered");
-		$(".programcontent").html("Après quelques mois, j'ai réussi à comprendre le fonctionnement et la semantique du HTML 5.Mes connaissances  dans ce langage de programmation sont solides.");
+		$(".programcontent").html("Mes connaissances sont solides.");
 
 
 
@@ -56,10 +56,10 @@ function move() {
 
 		$('#imggauche').attr('src','assets/img/js.png');
 		$("#myBar").css("background-color","#E5A228");
-		$("#myBar").attr("data-percent","60");
+		$("#myBar").attr("data-percent","50");
 		$(".programtitle").html("JAVASCRIPT");
 		$(".programtitle").css("color","#E5A228");
-		$(".programcontent").html("Mes connaissances en Javascript sont plutot moyennes mais je m'améliore de jours en jours.");
+		$(".programcontent").html("Mes connaissances en Javascript sont moyennes mais je m'améliore de jours en jours.");
 
 
 
@@ -85,7 +85,7 @@ function move() {
 		$("#myBar").attr("data-percent","60");
 		$(".programtitle").html("PHP");
 		$(".programtitle").css("color","#777BB3");
-		$(".programcontent").html("Je connais  les bases du PHP mais sans plus.");
+		$(".programcontent").html("Je connais  les bases du PHP.");
 
 
 
@@ -106,12 +106,12 @@ function move() {
 
 	function premiere(){
 
-		$('#imggauche').attr('src','assets/img/premiere.png');
-		$("#myBar").css("background-color","#35193D");
-		$("#myBar").attr("data-percent","40");
-		$(".programtitle").html("Premiere");
-		$(".programtitle").css("color","#35193D");
-		$(".programcontent").html("J'utilise Premiere pour faire des montages videos.");
+		$('#imggauche').attr('src','assets/img/https://radiorfa.com/wp-content/uploads/2014/01/wordpress-logo11.png');
+		$("#myBar").css("background-color","cyan");
+		$("#myBar").attr("data-percent","70");
+		$(".programtitle").html("Wordpress");
+		$(".programtitle").css("color","cyan");
+		$(".programcontent").html("Avec Wordpress je peux créer des sites avec ou sans thèmes");
 
 
 	}
