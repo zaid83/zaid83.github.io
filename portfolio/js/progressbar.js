@@ -106,11 +106,11 @@ function move() {
 
 	function premiere(){
 
-		$('#imggauche').attr('src','assets/img/https://radiorfa.com/wp-content/uploads/2014/01/wordpress-logo11.png');
-		$("#myBar").css("background-color","cyan");
+		$('#imggauche').attr('src','https://radiorfa.com/wp-content/uploads/2014/01/wordpress-logo11.png');
+		$("#myBar").css("background-color","blue");
 		$("#myBar").attr("data-percent","70");
 		$(".programtitle").html("Wordpress");
-		$(".programtitle").css("color","cyan");
+		$(".programtitle").css("color","blue");
 		$(".programcontent").html("Avec Wordpress je peux créer des sites avec ou sans thèmes");
 
 
