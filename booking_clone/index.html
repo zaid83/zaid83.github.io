@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Clone</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!---------- 
+        Header
+    -------------- -->
+
+
+    <header class="header-booking">
+        <!-- Première navbar du header -->
+        <div class="first-nav-header">
+            <div class="logo"><img src="img/logo-booking-blanc.png" alt="logo"></div>
+            <ul class="first-nav-list">
+                <li class="first-nav-items"><a href="">EUR</a></li>
+                <li class="first-nav-items"><a href=""><img
+                            src="https://t-cf.bstatic.com/design-assets/assets/v3.56.0/images-flags/Us@3x.png"
+                            alt=""></a></li>
+                <li class="first-nav-items"><a href=""><i class="fa-regular fa-circle-question"></i>
+                    </a></li>
+                <li class="first-nav-items"><a href="">List your property</a></li>
+                <li class="first-nav-items"><span>Register</span></li>
+                <li class="first-nav-items"><span>Sign in</span></li>
+            </ul>
+        </div>
+        <!-- Deuxieme navbar du Header -->
+        <div class="second-nav-header">
+            <ul class="second-nav-list">
+                <li class="second-nav-items"><span><i class="fa-solid fa-bed"></i></span><a href="">Stays</a></li>
+                <li class="second-nav-items"><span><i class="fa-solid fa-plane"></i></span><a href="">Flights</a></li>
+                <li class="second-nav-items"><span><i class="fa-solid fa-plane-lock"></i></span><a href="">Flights +
+                        Hotel</a></li>
+                <li class="second-nav-items"><span><i class="fa-solid fa-car"></i></span><a href="">Car rentals</a></li>
+                <li class="second-nav-items"><span><i class="fa-solid fa-snowman"></i></span><a href="">Attractions</a>
+                </li>
+                <li class="second-nav-items"><span><i class="fa-solid fa-taxi"></i></span><a href="">Airport Sales</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Titre du header -->
+        <div class="titles-header">
+            <h1 class="header-title">Find your next stay</h1>
+            <p class="subtitle-header">Search deals on hotels, homes, and much more...</p>
+        </div>
+    </header>
+    <main>
+
+
+        <!------------------------
+            Section des inputs 
+        --------------------------->
+
+        <section class="section" id="input-section">
+            <div class="inputs-container">
+                <form action="">
+                    <input type="text" placeholder="Where are you going">
+                    <input type="date" placeholder="Check-in Date - Check-out Date">
+                    <input type="text" placeholder="One adult two children">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="forwork" id="forwork">
+                <label for="forwork">I'm traveling for work</label>
+            </div>
+            <!-- Div de l'alerte covid -->
+            <div class="covid-alert">
+                <span></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, fuga.a <a href="">Learn
+                        more</a></p>
+            </div>
+        </section>
+
+
+        <!------------------------------
+             Section des offres
+         ------------------------------------>
+
+        <section class="section" id="offers-section">
+            <div class="offers-title">
+                <h2 class="title-offers titles">Offers</h2>
+                <p class="subtitle-offers subtitles">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <!-- Container flex -->
+            <div class="offers-container">
+                <div class="offers-container-1">
+                    <div class="offers-container-description">
+                        <p class="offers-container-title">Lorem ipsum dolor sit amet consectetur.</p><br>
+                        <p class="offers-container-subtitles">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p><br>
+                        <button class="offers-button-container">Search for flights</button>
+                    </div>
+                    <img src="img/avion.jpeg" alt="">
+                </div>
+                <div class="offers-container-2">
+                    <div class="offers-container-description">
+                        <p class="offers-container-title">Lorem ipsum dolor sit.</p><br>
+                        <p class="offers-container-subtitles">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p><br>
+                        <button class="offers-button-container">Discovery monthly stays</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin du container -->
+        </section>
+
+
+        <!------------------------------
+             Section des "Quick"
+         ------------------------------------>
+
+        <section class="section" id="quick-section">
+            <!-- Titre de la section -->
+            <div class="quick-title">
+                <h2 class="title-quick titles">Quick and easy trip planner</h2>
+                <p class="subtitle-quick subtitles">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <!-- Menu de la section quick -->
+            <div class="quick-menu">
+                <ul class="quick-menu-list">
+                    <li class="quick-menu-items"><span></span><a href="">Romance</a></li>
+                    <li class="quick-menu-items"><span></span><a href="">Relax</a></li>
+                    <li class="quick-menu-items"><span></span><a href="">Ski</a></li>
+                    <li class="quick-menu-items"><span></span><a href="">City</a></li>
+                    <li class="quick-menu-items"><span></span><a href="">Beach</a></li>
+                    <li class="quick-menu-items"><span></span><a href="">Outdoors</a></li>
+                </ul>
+            </div>
+            <!-- Container flex de "quick" -->
+            <div class="quick-container">
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="quick-img-container">
+                    <img src="img/img01.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+            <!-- fin du container -->
+        </section>
+
+
+        <!------------------------------
+             Section "explore"
+         ------------------------------------>
+        <section class="section" id="explore-section">
+            <!-- Titre de la section explore -->
+            <div class="explore-title">
+                <h2 class="title-explore titles">Explore France</h2>
+                <p class="subtitle-explore subtitles">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <!-- Container flex de la section -->
+            <div class="explore-container">
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="explore-img-container">
+                    <img src="img/img10.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+            <!-- fin du container -->
+        </section>
+
+        <!------------------------------
+             Section "Browse"
+         ------------------------------------>
+
+        <section class="section" id="browse-section">
+            <!-- Titre de la section -->
+            <div class="browse-title">
+                <h2 class="title-browse titles">Browse France</h2>
+            </div>
+            <!-- container de la grille -->
+            <div class="browse-main-container">
+                <div class="browse-container1">
+                    <div class="browse-img-container browse1">
+                        <img src="img/img11.jpeg" alt="">
+                        <p class="img-titles">Lorem</p>
+                        <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="browse-img-container browse2">
+                        <img src="img/img11.jpeg" alt="">
+                        <p class="img-titles">Lorem</p>
+                        <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="browse-img-container browse3">
+                        <img src="img/img11.jpeg" alt="">
+                        <p class="img-titles">Lorem</p>
+                        <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="browse-img-container browse4">
+                        <img src="img/img11.jpeg" alt="">
+                        <p class="img-titles">Lorem</p>
+                        <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="browse-container2">
+                    <div class="browse-img-container browse5">
+                        <img src="img/img03.jpg" alt="">
+                    </div>
+                    <div class="browse-img-container browse6">
+                        <img src="img/img03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="browse-container3">
+                    <div class="browse-img-container browse7">
+                        <img src="img/img04.jpg" alt="">
+                    </div>
+                    <div class="browse-img-container browse8">
+                        <img src="img/img04.jpg" alt="">
+                    </div>
+                    <div class="browse-img-container browse9">
+                        <img src="img/img04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- fin du container -->
+        </section>
+
+        <!------------------------------
+             Section "Unique"
+         ------------------------------------>
+
+        <section class="section" id="unique-section">
+            <div class="unique-title">
+                <h2 class="title-unique titles">Stay at our top unique properties</h2>
+                <p class="subtitle-unique subtitles">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="unique-container">
+                <div class="unique-img-container">
+                    <img src="img/img07.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="unique-img-container">
+                    <img src="img/img07.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="unique-img-container">
+                    <img src="img/img07.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="unique-img-container">
+                    <img src="img/img07.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------
+             Section "inspirations"
+         ------------------------------------>
+
+
+        <section class="section" id="inspiration">
+            <div class="inspiration-title">
+                <h2 class="title-inspiration titles">Get inspiration</h2>
+            </div>
+            <div class="inspiration-main-container">
+                <div class="inspiration-container1">
+                    <div class="inspiration-img-container1"><img src="img/img05.webp" alt=""></div>
+                    <div class="inspiration-img-container2"><img src="img/img05.webp" alt=""></div>
+                    <div class="inspiration-img-container3"><img src="img/img05.webp" alt=""></div>
+                </div>
+                <div class="inspiration-container2">
+                    <div class="inspiration-img-container4"><img src="img/img06.webp" alt=""></div>
+                    <div class="inspiration-img-container5"><img src="img/img06.webp" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------
+             Section "Homes"
+         ------------------------------------>
+
+        <section class="section" id="homes-section">
+            <div class="homes-title">
+                <h2 class="title-homes titles">Homes guest loves</h2>
+            </div>
+            <div class="homes-container">
+                <div class="homes-img-container">
+                    <img src="img/img08.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="homes-img-container">
+                    <img src="img/img08.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="homes-img-container">
+                    <img src="img/img08.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="homes-img-container">
+                    <img src="img/img08.webp" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+        </section>
+        <!------------------------------
+            Section "Connect"
+        ------------------------------------>
+        <section class="section" id="connect-section">
+            <div class="connect-title">
+                <h2 class="title-connect titles">Connect with other travelers</h2>
+            </div>
+            <div class="connect-container">
+                <div class="connect-img-container">
+                    <img src="img/img09.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="connect-img-container">
+                    <img src="img/img09.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="connect-img-container">
+                    <img src="img/img09.jpg" alt="">
+                    <p class="img-titles">Lorem</p>
+                    <p class="img-subtitles">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </section>
+        <!------------------------------
+            Section "Discount"
+        ------------------------------------>
+        <section class="section" id="discount-section">
+            <div class="discount-container">
+                <img src="img/genius.png" alt="">
+                <div class="discount-text">
+                    <p class="discount-title">Get instant discounts</p>
+                    <p class="discount-subtitle">Just sign into your Booking.com account and look for the blue Genius
+                        logo to save </p>
+                    <br>
+                    <button class="buttons-discounts">Sign in</button>
+                    <button class="buttons-discounts">Register</button>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------
+            Section "Destinations"
+        ------------------------------------>
+
+        <section class="section" id="destinations-section">
+            <div class="destinations-title">
+                <h2 class="title-destinations titles">Destinations we love</h2>
+            </div>
+            <div class="destinations-menu">
+                <ul class="destinations-menu-list">
+                    <li class="destinations-menu-items"><a href="">Regions</a></li>
+                    <li class="destinations-menu-items"><a href="">Cities</a></li>
+                    <li class="destinations-menu-items"><a href="">Place of interest</a></li>
+                </ul>
+            </div>
+            <div class="destinations-container">
+                <div class="destinations-region1">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+                <div class="destinations-region2">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+                <div class="destinations-region3">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+                <div class="destinations-region4">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+                <div class="destinations-region5">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+                <div class="destinations-region6">
+                    <li class="region-items1">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items2">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items3">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li class="region-items4">
+                        <p class="region-title img-titles">Lorem</p>
+                        <p class="region-subtitle img-subtitles">Lorem ipsum dolor sit.</p>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------
+             Section "Newsletter"
+         ------------------------------------>
+        <section class="section" id="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <p class="newsletter-title">Save time, save money!</p>
+                    <p class="newsletter-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div><br>
+                <div class="newsletter-input">
+                    <input type="text">
+                    <button>Suscribe</button>
+                </div>
+                <br>
+            </div>
+            <div class="property-container">
+                <div class="button-div">
+                    <button class="prop-button">List your property</button>
+                </div>
+            </div>
+            <hr>
+            <div class="links-div">
+                <ul class="links-list">
+                    <li class="links-items1"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="links-items2"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="links-items3"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="links-items4"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="links-items5"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="links-items6"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <!------------------------------
+             FOOTER
+         ------------------------------------>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-list1">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container-list2">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container-list3">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-container-list4">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container-list5">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container-list6">
+                <ul class="list-links-footer">
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="footer-links-items"><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="extranet"><a href="">Extranet Log-in</a></div><br>
+        <div class="copyright">
+            <p>
+                @Copyright Zaid Chakir développeur Web de l'Afpa.
+            </p>
+        </div><br><br>
+        <div class="last-text-footer">Booking.com is part of Booking Holdings Inc., the world leader in online travel
+            and related services. </div>
+        <div class="partenariats-footer">
+            <ul class="partenariats-list">
+                <li class="partenatariat-items"><img src="img/partenaire01.png" alt=""></li>
+                <li class="partenatariat-items"><img src="img/partenaire02.png" alt=""></li>
+                <li class="partenatariat-items"><img src="img/partenaire03.png" alt=""></li>
+                <li class="partenatariat-items"><img src="img/partenaire04.png" alt=""></li>
+                <li class="partenatariat-items"><img src="img/partenaire05.png" alt=""></li>
+                <li class="partenatariat-items"><img src="img/partenaire06.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
