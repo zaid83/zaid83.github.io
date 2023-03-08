@@ -541,7 +541,7 @@ h2 {
 }
 @media only screen and (max-width: 730px) {
   .contact__col {
-    width: 60%;
+    width: 45%;
   }
 }
 .contact__inputBox {
