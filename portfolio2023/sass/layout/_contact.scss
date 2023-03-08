@@ -1,0 +1,128 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__container {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    &__title {
+        width: 100%;
+        color: $color-secondary;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__row {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    }
+
+    &__col {
+        position: relative;
+        width: 100%;
+        padding: 0 1rem;
+        margin: 3rem 0 1rem;
+        transition: .5s;
+
+    }
+
+    &__inputBox {
+        position: relative;
+        width: 100%;
+        height: 4rem;
+        color: $color-primary-light;
+
+        & input,
+        textarea {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 1rem;
+            z-index: 1;
+            color: $color-white;
+
+            &:focus+.contact__text,
+            &:valid+.contact__text {
+                top: -3.5rem;
+                left: -1rem;
+            }
+
+            &:focus~.contact__line,
+            &:valid~.contact__line {
+                height: 100%;
+            }
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 4rem;
+        font-size: 18px;
+        padding: 0 1rem;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+        color: $color-secondary;
+
+    }
+
+    &__line {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        background: $color-primary-light;
+        transition: .5s;
+        border-radius: 0.2rem;
+        pointer-events: none;
+    }
+
+    &__textarea {
+        position: relative;
+        width: 100%;
+        height: 10rem;
+        padding: 1rem 0;
+
+        & textarea {
+            height: 100%;
+            resize: none;
+
+            &:focus+.contact__text,
+            &:valid+.contact__text {
+                top: -3.5rem;
+                left: -1rem;
+            }
+
+            &:focus~.contact__line,
+            &:valid~.contact__line {
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+input[type="submit"] {
+    border: none;
+    padding: .7rem 3.5rem;
+    cursor: pointer;
+    outline: none;
+    background: $color-primary-light;
+    color: $color-white;
+    font-size: 18px;
+    border-radius: 2px;
+}

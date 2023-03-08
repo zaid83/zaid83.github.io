@@ -1,0 +1,30 @@
+.portfolio {
+    background: linear-gradient(to top, $color-primary-light, $color-primary 75%);
+
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+
+        @include respond(phone) {
+
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        display: inline-block;
+
+
+    }
+
+    &__subtitle {
+
+        margin-top: 1rem;
+    }
+
+
+}

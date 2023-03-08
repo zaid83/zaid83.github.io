@@ -1,0 +1,152 @@
+.card {
+    background-color: white;
+    min-width: 30rem;
+    position: relative;
+    box-shadow: 0.3rem 0.5rem 0.3rem rgba($color-white, .1);
+    transition: all 0.3s;
+    font-family: $font-text;
+    flex-basis: 30%;
+
+
+
+    @include respond(tab-port) {}
+
+    @include respond(phone) {
+        flex-basis: 90%;
+    }
+
+    &:hover {
+        box-shadow: 0.2rem 0.1rem 0.1rem rgba($color-white, .25);
+        transform: translateX(2px);
+    }
+
+    &__picture {
+        background-size: cover;
+        background-position: center;
+        height: 18rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        @include respond(phone) {
+            height: 50rem;
+        }
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark),
+                url(../img/trek.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary),
+                url(../img/eventsone.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary),
+                url(../img/portfolio.png);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary),
+                url(../img/trailerflix.png);
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark),
+                url(../img/doublecachee.png);
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary),
+                url(../img/old-portfolio.png);
+        }
+    }
+
+
+    &__heading {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 15rem;
+        right: 0.4rem;
+        width: 80%;
+
+    }
+
+    &__heading-span {
+        padding: 0.5rem 0.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-secondary, .85),
+                    rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary, .85));
+        }
+
+        &--3 {
+            color: $color-primary;
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-grey-light, .85),
+                    rgba($color-grey-light, .85));
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary, .85));
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-secondary, .85),
+                    rgba($color-secondary-dark, .85));
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary, .85));
+        }
+    }
+
+    &__details {
+        padding: 1rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 15px;
+                padding: 0.9rem;
+                color: $color-grey-dark;
+
+
+                &:not(:last-child) {
+
+                    border-bottom: 1px solid $color-grey-light;
+                }
+            }
+        }
+    }
+
+    &__hidden {
+        display: none;
+
+    }
+}

@@ -1,0 +1,59 @@
+#hero-home {
+    padding: 3rem 5rem 5rem 5rem;
+    background: linear-gradient(to top, $color-primary-light, $color-primary 75%);
+}
+
+.about {
+    padding: 5rem 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+
+    }
+
+    &__img-box {
+        min-width: 40%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+
+    &__title {
+
+        color: $color-secondary;
+        display: inline-block;
+        padding: 0.1rem 0.8rem;
+
+    }
+
+    &__text {
+        margin-top: 2rem;
+
+    }
+
+
+}
+
+#portfolio {
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+#skills {
+
+    background: #f7f7f7;
+    min-height: 100vh;
+    padding: 5rem 5rem;
+}
+
+#contact {
+    background: linear-gradient(to top, black, $color-primary 75%);
+    padding: 5rem 5rem 5rem 5rem;
+    color: $color-white;
+
+}

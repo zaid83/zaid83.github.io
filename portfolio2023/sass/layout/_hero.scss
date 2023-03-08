@@ -1,0 +1,53 @@
+.hero__home {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+.letters {
+    letter-spacing: 0rem;
+    margin: 0rem;
+}
+
+.lastName,
+.firstName,
+.fullName,
+.job,
+.job2 {
+    display: flex;
+}
+
+
+.space {
+    padding: 1rem;
+}
+
+.hero__text-box {
+    flex-basis: 0;
+    padding-top: 2rem;
+
+    @include respond(phone) {
+        width: 100%;
+    }
+}
+
+
+.hero__subtitle {
+    margin-top: 2rem;
+}
+
+.hero__img {}
+
+.hero__humaaans {
+    @include respond(tab-port) {
+        width: 40rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
+}

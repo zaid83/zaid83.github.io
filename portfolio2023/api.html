@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Zaid Chakir</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/aeaae0a82e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVIGATION -->
+
+
+        <div class="side-navigation__links-box hidden">
+            <a href="index.html" class="side-navigation__links">Accueil</a>
+            <a href="index.html#portfolio" class="side-navigation__links">Portfolio</a>
+            <a href="index.html#skills" class="side-navigation__links">Skills</a>
+            <a href="index.html#contact" class="side-navigation__links">Contact</a>
+            <a href="api.html" class="side-navigation__links">Music Api</a>
+            <a href="#cv" class="side-navigation__links ">Télécharger le cv</a>
+        </div>
+
+        <nav class="navigation">
+
+
+            <div class="navigation__brand-box"><span class="navigation__brand">Zaïd Portfolio</span></div>
+            <div class="navigation__links-box">
+                <a href="index.html" class="navigation__links">Accueil</a>
+                <a href="#portfolio" class="navigation__links">Portfolio</a>
+                <a href="#skills" class="navigation__links">Skills</a>
+                <a href="#contact" class="navigation__links">Contact</a>
+                <a href="api.html" class="navigation__links">Music Api</a>
+                <a href="#cv" class="navigation__links btn btn--nav">Télécharger le cv</a>
+            </div>
+
+            <div class="navigation__burger">
+                <span id="top"></span>
+                <span id="middle"></span>
+                <span id="bottom"></span>
+            </div>
+        </nav>
+        <!-- END NAVIGATION -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SECTION HERO -->
+    <section class="hero" id="hero-home">
+        <div class="hero__home">
+
+            <!-- HERO TEXT CONTENT -->
+            <div class="hero__text-box">
+                <h1 class="hero__title hero_title--api">
+                    ECOUTER DU RAP TURC
+                </h1>
+                <p class="hero__subtitle hero__subtitle--api">J'ai récuperer une Api de musique pour pouvoir écouter 30s
+                    de rap Turc</p>
+            </div>
+            <!-- END TEXT CONTENT -->
+
+            <!-- HERO IMG -->
+            <div class="hero__img">
+                <!-- div du lecteur de musique -->
+                <div class="lecteur">
+                    <!-- Navbar -->
+                    <nav class="navMusic">
+                        <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+                    </nav>
+                    <!-- Cover de l'album -->
+                    <img src="" alt="album-cover" class="album-cover" id="imgTrack">
+                    <!-- Titre de la chanson -->
+                    <h1 id="titleTrack"></h1>
+                    <!-- Auteur de la chanson -->
+                    <p id="authorTrack"></p>
+
+                    <!-- Controles du lecteur -->
+                    <audio id="song" autoplay="false" autostart="false" preload="none">
+                        <source src="" type="audio/mpeg" id="trackmp3">
+                    </audio><br>
+                    <!-- Volume du lecteur -->
+                    <i class="fa-solid fa-volume-high"></i> <input type="range" value="0.5" min="0" max="1" step="0.1"
+                        id="progressVolume">
+                    <!-- Barre de progression -->
+                    <input type="range" value="0" id="progress">
+                    <!-- Boutons de controles -->
+                    <div class="controls">
+                        <div onclick="shuffleTrack()" id="shuffle"><i class="fa-solid fa-shuffle"></i></div>
+                        <div onclick="backTrack()"><i class="fa-solid fa-backward-step"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <div onclick="forTrack()"><i class="fa-solid fa-forward-step"></i></div>
+                        <div onclick="repeatTrack()" id="repeat"><i class="fa-solid fa-repeat"></i></div>
+                    </div>
+                </div>
+                <!-- Fin de la div du lecteur -->
+            </div>
+            <!-- END HERO IMG -->
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">Contactez-Moi</h2>
+            <div class="contact__row">
+                <div class="contact__col">
+                    <div class="contact__inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="contact__text">Nom</span>
+                        <span class="contact__line"></span>
+                    </div>
+                </div>
+                <div class="contact__col">
+                    <div class="contact__inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="contact__text">Prénom</span>
+                        <span class="contact__line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__row">
+                <div class="contact__col">
+                    <div class="contact__inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="contact__text">Téléphone</span>
+                        <span class="contact__line"></span>
+                    </div>
+                </div>
+                <div class="contact__col">
+                    <div class="contact__inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="contact__text">Email</span>
+                        <span class="contact__line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__row">
+                <div class="contact__col">
+                    <div class="contact__inputBox contact__textarea"">
+                        <textarea required=" required"></textarea>
+                        <span class="contact__text">Ecrivez votre message</span>
+                        <span class="contact__line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__row">
+                <div class="contact__col">
+                    <input type="submit" value="Envoyer">
+                </div>
+    </section>
+
+
+    <script src="js/musicplayer.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
