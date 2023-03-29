@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".css/navigation.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <img src="img/logo.png" alt="logo" class="navigation__logo">
+        <div id="navigation__sidenav" class="navigation__sidenav">
+            <a id="sidenav__closeBtn" href="#" class="sidenav__close">×</a>
+            <ul>
+                <li class="navigation__sidenav__items"><a href="#">Accueil</a></li>
+                <li class="navigation__sidenav__items"><a href="#">Classement</a></li>
+                <li class="navigation__sidenav__items"><a href="#">Contact</a></li>
+                <li class="navigation__sidenav__items"><a href="#">Panier<sub
+                            class="navigation__items--cart__sub">0</sub></a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="navigation__openBtn">
+            <span class="navigation__burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <ul class="navigation__list">
+            <li class="navigation__items"><a href="" class="navigation__links">Accueil</a></li>
+            <li class="navigation__items"><a href="" class="navigation__links">Classement</a></li>
+            <li class="navigation__items"><a href="" class="navigation__links">Contact</a></li>
+            <li class="navigation__items navigation__items--cart"><a href="" class="navigation__links">Panier<sub
+                        class="navigation__items--cart__sub">0</sub></a>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

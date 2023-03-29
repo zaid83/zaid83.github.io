@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Source+Serif+Pro:wght@200;300;400;700;900&display=swap");
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    background: linear-gradient(to top, #191515 5%, #780000, #CF0A0A);
+    font-family: "Anton", sans-serif;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0rem 8rem;
+    list-style: none;
+}
+
+.navigation__items--cart__sub {
+    background-color: #191515;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.navigation__links {
+    text-decoration: none;
+}
+
+.navigation__links:link,
+.navigation__links:visited {
+    color: white;
+    transition: all 0.2s;
+}
+
+.navigation__links:hover {
+    border-bottom: 1px solid #DC5F00;
+    padding-bottom: 0.4rem;
+    color: #DC5F00;
+}
+
+@media only screen and (max-width: 59.25em) {
+    .navigation__links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .navigation__links {
+        display: none;
+    }
+}
+
+.navigation__sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -100%;
+    background-color: #191515;
+    padding-top: 30rem;
+    transition: right 0.5s ease;
+}
+
+/* Sidenav menu links */
+.navigation__sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.navigation__sidenav a:hover {
+    color: #DC5F00;
+}
+
+.navigation__sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.navigation__sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav__close {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    font-size: 10rem;
+}
+
+/* Icône burger */
+.navigation__burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+@media only screen and (max-width: 59.25em) {
+    .navigation__burger-icon span {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .navigation__burger-icon span {
+        display: block;
+    }
+}
+
+#navigation__openBtn {
+    position: absolute;
+    right: 2rem;
+}

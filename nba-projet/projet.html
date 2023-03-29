@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <img src="img/logo.png" alt="logo" class="navigation__logo">
+        <div id="navigation__sidenav" class="navigation__sidenav">
+            <a id="sidenav__closeBtn" href="#" class="sidenav__close">×</a>
+            <ul>
+                <li class="navigation__sidenav__items"><a href="index.html">Accueil</a></li>
+                <li class="navigation__sidenav__items"><a href="projet.html">Classement</a></li>
+                <li class="navigation__sidenav__items"><a href="contact.html">Contact</a></li>
+                <li class="navigation__sidenav__items"><a href="#0">Panier<sub
+                            class="navigation__items--cart__sub">0</sub></a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="navigation__openBtn">
+            <span class="navigation__burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <ul class="navigation__list">
+            <li class="navigation__items"><a href="index.html" class="navigation__links">Accueil</a></li>
+            <li class="navigation__items"><a href="projet.html" class="navigation__links">Classement</a></li>
+            <li class="navigation__items"><a href="contact.html" class="navigation__links">Contact</a></li>
+            <li class="navigation__items navigation__items--cart"><a href="" class="navigation__links">Panier<sub
+                        class="navigation__items--cart__sub">0</sub></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Inscrivez vous a la Newsletter</h1>
+        <div class="myForm">
+            <input id="email" type="email" name="email" placeholder="entrez votre mail" required>
+            <button id="btn">envoyer</button>
+        </div>
+
+        <div id="pop1" class="succes invisible">
+            <img src="succes.webp">
+            <h2>Merci !!</h2>
+            <p id="succes">Votre inscription a été reussie</p>
+            <button id="buttonok">ok</button>
+        </div>
+
+
+        <div id="pop2" class="invalid invisible">
+            <img class="warning" src="warning.png" alt="" srcset="">
+            <h2>Desolé!! retapez votre email</h2>
+            <p id="error" Erreur sur le mail veuillez rentrez de nouveau votre mail></p>
+            <button id="button" type="button">erreur</button>
+        </div>
+
+        <div class="equipes">
+            <h1>classement "NBA est" conference</h1>
+            <table class="tableau">
+                <tr>
+                    <th>nom de conference
+                    <th>
+                    <th>prochain match
+                    <th>
+                    <th>nom de l'equipe
+                    <th>
+                    <th>classement
+                    <th>
+                    <th>matches jouer
+                    <th>
+                    <th>matches perdus
+                    <th>
+                    <th>pourcentage
+                    <th>
+                    <th> victoire
+                    <th>
+
+                <tr>
+                <tr>
+
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="projet.js"></script>
+</body>
+
+</html>

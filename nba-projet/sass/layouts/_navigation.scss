@@ -1,0 +1,129 @@
+/* MENU NAVIGATION */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0rem 8rem;
+        list-style: none;
+    }
+
+}
+
+.navigation__items--cart__sub {
+    background-color: $color-black;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+.navigation__links {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: $color-white;
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        border-bottom: 1px solid $color-primary-light;
+        padding-bottom: 0.4rem;
+
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+
+}
+
+
+
+/// NAVBAR RESPONSIVE
+
+.navigation__sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -100%;
+    background-color: $color-black;
+    padding-top: 30rem;
+    transition: right 0.5s ease;
+
+}
+
+/* Sidenav menu links */
+.navigation__sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $color-white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+.navigation__sidenav a:hover {
+    color: $color-primary-light;
+}
+
+.navigation__sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Active class */
+.navigation__sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav__close {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    font-size: 10rem;
+
+}
+
+
+/* Icône burger */
+.navigation__burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+}
+
+#navigation__openBtn {
+    position: absolute;
+    right: 2rem;
+}

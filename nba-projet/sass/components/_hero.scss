@@ -1,0 +1,95 @@
+.hero {
+    display: flex;
+    color: $color-white;
+    padding: 4rem 8rem;
+    gap: 1rem;
+
+    @include respond(tab-port) {
+        flex-wrap: wrap;
+    }
+
+    @include respond(phone) {
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        flex-basis: 35%;
+
+
+        @include respond(tab-port) {
+            flex-basis: 100%;
+        }
+
+        @include respond(phone) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__slogan {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    &__product {
+        flex-basis: 75%;
+        position: relative;
+
+
+        @include respond(tab-port) {
+            flex-basis: 100%;
+            flex-wrap: wrap;
+            font-size: 3rem;
+        }
+
+        @include respond(phone) {
+            flex-basis: 100%;
+            font-size: 2rem;
+        }
+
+        &__img {
+            width: 100%;
+            max-width: 75rem;
+            object-fit: fill;
+            right: 15%;
+            position: absolute;
+            transform: rotate(-20deg) !important;
+
+            @include respond(tab-port) {
+                position: initial;
+            }
+
+            @include respond(phone) {
+                position: initial;
+            }
+        }
+
+        &__content {
+            position: absolute;
+            right: 0%;
+            bottom: 6%;
+            text-align: center;
+
+
+
+            @include respond(phone) {
+                border-radius: 50%;
+                padding: 6%;
+                background-color: $color-black;
+            }
+
+        }
+
+        &__name,
+        &__price {
+            display: block;
+        }
+
+
+    }
+
+}

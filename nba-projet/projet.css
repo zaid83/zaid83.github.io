@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(255, 0, 27, 1) 0%, rgba(2, 0, 36, 1) 100%);
+    background-image: url(nba.jpeg);
+    background-size: cover;
+}
+
+
+h1 {
+    margin-left: 20px;
+    text-align: center;
+    color: #ccb8b9;
+}
+
+.myForm {
+    width: 200px;
+    margin-top: 20%;
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    border: #333;
+    border-radius: 6px;
+    box-shadow: 3px #b80009;
+    text-align: center;
+}
+
+
+
+.succes {
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 8px rgb(12, 214, 12);
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border: #333;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+
+
+}
+
+
+
+.succes img {
+    width: 100px;
+    margin-top: -50%;
+    box-shadow: 0 2px 5px rgb(130, 178, 146);
+    border-radius: 6px;
+    padding: 2px #fff;
+}
+
+.succes h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.invalid {
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 8px rgb(12, 214, 12);
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border: #333;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+.equipes {
+    width: 100%;
+    margin-top: 10%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    text-align: center;
+    justify-content: center;
+    line-height: 16px;
+
+}
+
+.tableau {
+
+    margin: 0 auto;
+    border: 2px solid #0f0f0f;
+    border-spacing: 4px;
+    border-collapse: collapse;
+}
+
+/* .tableau tr{
+    
+    border: 3px solid rgb(0, 0, 0); 
+    background-color: rgb(0, 255, 85); 
+
+}   */
+
+.tableau th {
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(241, 233, 233);
+    justify-content: center;
+    background: rgb(233, 3, 3);
+    background: linear-gradient(90deg, rgba(233, 3, 3, 1) 3%, rgba(233, 3, 3, 1) 7%, rgba(233, 3, 3, 0.9640231092436975) 10%, rgba(14, 13, 13, 1) 100%);
+    padding: 10px;
+}
+
+
+.tableau tr:nth-child(odd) {
+    color: #fff;
+    background: rgb(233, 3, 3);
+    background: linear-gradient(90deg, rgba(233, 3, 3, 1) 3%, rgba(233, 3, 3, 1) 7%, rgba(233, 3, 3, 0.9640231092436975) 10%, rgba(14, 13, 13, 1) 100%);
+}
+
+
+.tableau th:hover {
+    background-color: #b35151;
+}
+
+.tableau td:nth-child(odd) {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(235, 230, 230);
+    /* border: 3px solid #b80009;  */
+    justify-content: center;
+    vertical-align: middle;
+    /* background-color: #efc3c3; */
+    padding: 5px;
+    margin: 5px;
+
+
+}
+
+.tableau td:hover {
+    background-color: rgb(15, 173, 120);
+
+}

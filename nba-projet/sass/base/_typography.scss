@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Source+Serif+Pro:wght@200;300;400;700;900&display=swap');
+
+
+html {
+    font-family: 'Anton', sans-serif;
+}
+
+.navigation {
+    font-size: 2rem;
+}
+
+/* TYPOGRAPHIES HERO */
+
+.hero__title {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: $color-grey;
+}
+
+.hero__slogan {
+    font-size: 3.5rem;
+    font-weight: 200;
+    font-family: 'Source Serif Pro', serif;
+    color: $color-grey;
+}
+
+/* TYPOGRAPHIE BACKGROUND HEADER */
+
+.header__title__background {
+    color: white;
+    letter-spacing: 11rem;
+    opacity: 0.15;
+    font-size: 50rem;
+    font-family: 'Bebas Neue';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+
+}
+
+/* TYPO HERO NOM PRODUIT */
+.hero__product__name {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    color: $color-yellow;
+
+    @include respond(tab-port) {
+
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        flex-basis: 100%;
+        font-size: 3rem;
+
+    }
+}
+
+.hero__product__price {
+    font-size: 6rem;
+    font-family: 'Anton', sans-serif;
+
+    @include respond(tab-port) {
+
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        flex-basis: 100%;
+        font-size: 3rem;
+    }
+}
+
+/* TYPO SECTION PRODUITS */
+
+.top-products__title {
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: $color-primary-light;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+
+}
+
+.products__article__title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: 'Source Serif Pro', serif;
+    color: $color-black;
+}
+
+.products__article__price {
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: 'Source Serif Pro', serif;
+    color: $color-black;
+}
