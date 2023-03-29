@@ -9,7 +9,7 @@ let links = document.querySelectorAll(".side-navigation__links");
 links.forEach(link => {
     link.addEventListener('click', function () {
         spanMiddle.style.display = "block";
-        spanBottom.style.marginTop = "5px";
+        spanBottom.style.marginTop = "4px";
         spanBottom.style.transform = "rotate(0deg)";
         spanTop.style.transform = "rotate(0deg)";
         menu.classList.remove("open");
@@ -27,14 +27,14 @@ function menuburger() {
 
         menu.classList.add("open");
         spanMiddle.style.display = "none";
-        spanBottom.style.marginTop = "-5px";
+        spanBottom.style.marginTop = "-4px";
         spanBottom.style.transform = "rotate(45deg)";
         spanTop.style.transform = "rotate(-45deg)";
         modal.classList.remove('hidden');
 
     } else {
         spanMiddle.style.display = "block";
-        spanBottom.style.marginTop = "5px";
+        spanBottom.style.marginTop = "4px";
         spanBottom.style.transform = "rotate(0deg)";
         spanTop.style.transform = "rotate(0deg)";
         menu.classList.remove("open");
